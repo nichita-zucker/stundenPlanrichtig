@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stundenplan (von N.R) </title>
+    <script src="https://kit.fontawesome.com/c950e51943.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: darkcyan;
+        }
+        table {
+            font-family: "Courier New", sans-serif;
+            border-collapse: collapse;
+            width: 70%;
+            color: darkslategrey;
+            font-weight: bold;
+            margin-left: 270px;
+            margin-top: 100px;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        h1 {
+
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        h4 {
+            color: lightcyan;
+            text-align: center;
+        }
+        a{
+            color: whitesmoke;
+        }
+
+        ul {
+            color: whitesmoke;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<h1><i>STUNDENPLAN</i></h1>
+<h4>von <i>Nichita Rudenco</i></h4>
+<table>
+    <tr style="background-color: darkgray">
+        <th><i class="fa-regular fa-clock"></i> Uhr</th>
+        <th><i class="fa-regular fa-calendar-days"></i> Montag</th>
+        <th><i class="fa-regular fa-calendar-days"></i> Dienstag</th>
+        <th><i class="fa-regular fa-calendar-days"></i> Mittwoch</th>
+        <th><i class="fa-regular fa-calendar-days"></i> Donnerstag</th>
+        <th><i class="fa-regular fa-calendar-days"></i> Freitag</th>
+    </tr>
+    <tr style="background-color: ghostwhite">
+        <td>7:50-8:35</td>
+        <td>GL</td>
+        <td>CHEMIE</td>
+        <td>GL</td>
+        <td>DEUTSCH</td>
+        <td>AL</td>
+    </tr>
+    <tr style="background-color: darkgray">
+        <td>8:35-9:20</td>
+        <td>GL</td>
+        <td>CHEMIE</td>
+        <td>GL</td>
+        <td>DEUTSCH</td>
+        <td>AL</td>
+    </tr>
+    <tr style="background-color: ghostwhite">
+        <td>9:20-9:45</td>
+        <td>PAUSE</td>
+        <td>PAUSE</td>
+        <td>PAUSE</td>
+        <td>PAUSE</td>
+        <td>PAUSE</td>
+    </tr>
+    <tr style="background-color: darkgray">
+        <td>9:45-10:30</td>
+        <td> ENGLISCH </td>
+        <td>AL</td>
+        <td>PHYSIK</td>
+        <td>MUSIC</td>
+        <td>ENGLISCH</td>
+    </tr>
+    <tr style="background-color: ghostwhite">
+        <td>10:30-11:15</td>
+        <td>ENGLISCH</td>
+        <td>GL</td>
+        <td>PHYSIK</td>
+        <td>MUSIC</td>
+        <td>ENGLISCH</td>
+    </tr>
+    <tr style="background-color: darkgray">
+        <td>11:15-11:30</td>
+        <td>PAUSE</td>
+        <td>PAUSE</td>
+        <td>PAUSE</td>
+        <td>PAUSE</td>
+        <td>PAUSE</td>
+    </tr>
+    <tr style="background-color: ghostwhite">
+        <td>11:30-12:15</td>
+        <td>DEUTSCH</td>
+        <td>MATHE</td>
+        <td>MATHE</td>
+        <td>ENGLISCH</td>
+        <td>SPORT</td>
+    </tr>
+    <tr style="background-color: darkgray">
+        <td>12:15-13:00</td>
+        <td>DEUTSCH</td>
+        <td>MATHE</td>
+        <td>MATHE</td>
+        <td>MATHE</td>
+        <td>SPORT</td>
+    </tr>
+    <tr style="background-color: ghostwhite">
+        <td>13:00-13:45</td>
+        <td>ENDE</td>
+        <td>ENDE</td>
+        <td>PAUSE</td>
+        <td>ENDE</td>
+        <td>ENDE</td>
+    </tr>
+    <tr style="background-color: darkgray">
+        <td>13:45-14:30</td>
+        <td></td>
+        <td></td>
+        <td>AL</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr style="background-color: ghostwhite">
+        <td>14:30-15:15</td>
+        <td></td>
+        <td></td>
+        <td>AL</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<ul>
+
+    <button type="button" onclick="myFunction()">Drück Hier </button>
+
+    <p id="info">Mehr Info</p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("info").innerHTML = "<li><a href=\"STUNDENPLAN/GL.html\"> GL</a></li>\n" +
+                "    <li><a href=\"STUNDENPLAN/MATHE.html\">MATHE</a></li>\n" +
+                "    <li><a href=\"STUNDENPLAN/AL.html\">AL</a></li>\n" +
+                "    <li><a href=\"../SPORT.html\">SPORT</a></li>\n" +
+                "    <li><a href=\"STUNDENPLAN/MUSIC.html\">MUSIC</a></li>\n" +
+                "    <li><a href=\"STUNDENPLAN/PHYSIK.html\">PHYSIK</a></li>\n" +
+                "    <li><a href=\"STUNDENPLAN/CHEMIE.html\">CHEMIE</a></li>\n" +
+                "    <li><a href=\"STUNDENPLAN/DEUTSCH.html\">DEUTSCH</a></li>\n" +
+                "    <li><a href=\"STUNDENPLAN/ENGLISCH.html\">ENGLISCH</a></li>";
+        }
+    </script>
+
+
+</ul>
+
+
+</body>
+</html>
